@@ -1,0 +1,91 @@
+.documentation-page {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+  /*  background-color: #e6f0ff; */
+  }
+  
+  .documentation-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .flowmax-logo {
+    height: 50px;
+  }
+  
+  .documentation-title {
+    font-size: 2.5rem;
+    color: #0047bb;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Search bar styling to match tutorials */
+  .documentation-search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+  }
+  
+  .documentation-search {
+    padding: 10px 40px 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #0047bb;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .documentation-search:focus {
+    border-color: #0085ff;
+    box-shadow: 0 0 10px rgba(0, 133, 255, 0.6);
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #0047bb;
+    cursor: pointer;
+  }
+  
+  /* Placeholder documentation cards */
+  .documentation-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .doc-card {
+    background: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .doc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .doc-card h2 {
+    font-size: 1.25rem;
+    color: #0047bb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .doc-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

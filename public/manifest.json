@@ -1,0 +1,9 @@
+{
+  "short_name": "Flowmax",
+  "name": "Flowmax - Hydraulic Design Software",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

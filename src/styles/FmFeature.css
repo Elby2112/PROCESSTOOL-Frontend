@@ -1,0 +1,172 @@
+.fm-feature-timeline {
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: var(--font-body);
+ /*background-color: #e6f0ff;*/
+  position: relative;
+}
+
+.fm-feature__title {
+  font-size: var(--text-3xl);
+  font-weight: 500;
+  color: var(--fm-color-1);
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-family: var(--font-heading);
+}
+
+.fm-feature__logo {
+  height: 38px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--fm-color-1);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-content {
+  background: white;
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.timeline-content h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--fm-color-1);
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+}
+
+.timeline-content p {
+  margin: 0;
+  color: var(--color-grey-dark);
+  font-size: var(--text-base);
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background: var(--fm-color-1);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin: 0 auto;
+}
+
+/* Connecting dot on timeline */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: var(--fm-color-1);
+  border: 4px solid white;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left::after {
+  right: -10px;
+}
+
+.timeline-item.right::after {
+  left: -10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item.left {
+    left: 0;
+  }
+
+  .timeline-item::after {
+    left: -12px;
+  }
+}
+
+/* Pulse animation for timeline dots */
+@keyframes pulseDot {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.4);
+  }
+  70% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 10px rgba(2, 132, 199, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(2, 132, 199, 0);
+  }
+}
+
+.timeline-item::after {
+  animation: pulseDot 2s infinite;
+}
+
+/* Hover effect for content box */
+.timeline-content {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(2, 132, 199, 0.2);
+}
+

@@ -1,0 +1,80 @@
+.hero-fm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0 4rem 2rem; 
+  background-color: var(--color-white);
+  gap: 2rem;
+  /*background-color: #e6f0ff;*/
+}
+
+.hero-fm__content {
+  flex: 1;
+  max-width: 600px;
+  font-family: var(--font-body);
+}
+
+.hero-fm__content h1 {
+  font-size: var(--text-3xl);
+  color: var(--fm-color-1);
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.hero-fm__content p {
+  font-size: var(--text-lg);
+  color: var(--color-grey-dark);
+  margin-bottom: 2rem;
+}
+
+.hero-fm__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-fm__buttons .btn {
+  padding: 0.75rem 2rem; /* Wider buttons */
+  border-radius: 6px;
+  font-weight: 400;
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-fm__buttons .btn-outline {
+  background-color: transparent;
+  color: var(--fm-color-1);
+  border: 2px solid var(--fm-color-1);
+}
+
+.hero-fm__buttons .btn-outline:hover {
+  background-color: var(--fm-color-1);
+  color: white;
+}
+
+.hero-fm__buttons .btn-primary {
+  background-color: var(--fm-color-1);
+  color: white;
+  border: 2px solid var(--fm-color-1);
+}
+
+.hero-fm__buttons .btn-primary:hover {
+  background-color: var(--fm-color-2);
+  border-color: var(--fm-color-2);
+}
+
+.hero-fm__image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Push image to right */
+  align-items: center;
+  margin: 0;
+}
+
+.hero-fm__image img {
+  width: 100%;
+  max-width: 100%; /* Fill the image container */
+  height: auto;
+  object-fit: contain;
+}

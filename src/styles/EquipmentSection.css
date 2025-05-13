@@ -1,0 +1,79 @@
+.equipment-compact-section {
+background-color: #e6f0ff;
+ /* background-color: #e6f0ff;*/
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: var(--font-body);
+}
+
+.equipment-compact-title {
+  font-size: var(--text-2xl);
+  color: var(--fm-color-1);
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+
+.flowmax-inline-logo {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.equipment-compact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.equipment-card {
+  background: white;
+  border-radius: 50%;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.equipment-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: var(--fm-color-2);
+  color: white;
+}
+
+.equipment-icon {
+  width: 60px; /* Larger icon size */
+  height: 60px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.equipment-card:hover .equipment-icon {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.equipment-label {
+  font-size: var(--text-sm);
+  color: var(--color-grey-dark);
+  font-weight: 500;
+  text-align: center;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.equipment-card:hover .equipment-label {
+  color: #fff; /* Label turns white on hover */
+}

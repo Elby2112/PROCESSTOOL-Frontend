@@ -1,0 +1,109 @@
+.learn-page {
+    padding: 5rem 2rem;
+    background: linear-gradient(to bottom right, #e0f2ff, #f0f8ff);
+    text-align: center;
+    font-family: var(--font-body);
+  }
+  
+  .learn-title {
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: var(--fm-color-1);
+    margin-bottom: 2rem;
+    animation: fadeInDown 1s ease forwards;
+  }
+  
+  .learn-subtitle {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 4rem;
+    animation: fadeInDown 1.2s ease forwards;
+  }
+  
+  .learn-resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .learn-card {
+    background: linear-gradient(to bottom right, #0077cc, #005fa3);
+    color: white;
+    border-radius: 18px;
+    padding: 2.5rem 2rem;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .learn-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .learn-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .learn-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    opacity: 0.9;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .learn-icon {
+    margin-bottom: 1rem;
+    animation: bounceIn 1s ease forwards;
+    transition: transform 0.3s;
+  }
+  
+  .learn-card:hover .learn-icon {
+    transform: scale(1.2) rotate(2deg);
+  }
+  
+  /* Bounce in animation */
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,89 @@
+.fm-modes-section {
+  padding: 4rem 2rem;
+  /*background-color: #f0f4fa;*/
+  text-align: center;
+  font-family: var(--font-body);
+  /*background-color: #e6f0ff;*/
+}
+
+.fm-modes-title {
+  font-size: var(--text-3xl);
+  font-family: var(--font-heading);
+  color: var(--fm-color-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.fm-modes-logo {
+  height: 36px;
+}
+
+.fm-modes-subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-grey-dark);
+  margin-bottom: 3rem;
+}
+
+.fm-modes-panels {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fm-mode-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  transition: 
+    transform 0.3s ease, 
+    border 0.3s ease, 
+    box-shadow 0.3s ease, 
+    border-radius 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.fm-mode-card:hover {
+  transform: scale(1.03);
+  border: 2px solid #0077cc;
+  box-shadow: 0 8px 30px rgba(0, 119, 204, 0.15);
+  border-radius: 20px;
+}
+
+
+.fm-mode-card:hover {
+  transform: translateY(-6px);
+}
+
+.fm-mode-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.fm-mode-icon.steady {
+  color: #0077cc;
+}
+
+.fm-mode-icon.dynamic {
+  color: #e63946;
+}
+
+.fm-mode-card h3 {
+  font-size: var(--text-xl);
+  margin-bottom: 0.75rem;
+  color: var(--fm-color-1);
+  font-family: var(--font-heading);
+}
+
+.fm-mode-card p {
+  font-size: var(--text-base);
+  color: #333;
+  line-height: 1.6;
+}

@@ -1,0 +1,41 @@
+.cta-learn-section {
+  background-color: #e6f0ff;
+    /*background-color: #dceeff; /* soft blue */
+    padding: 4rem 2rem;
+    text-align: center;
+    font-family: var(--font-body);
+  }
+  
+  .cta-learn-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .cta-learn-content h2 {
+    font-size: var(--text-xl);
+    color: #003f73;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-learn-content p {
+    font-size: var(--text-md);
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-learn-content button {
+    background-color: var(--fm-color-1);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-learn-content button:hover {
+    background-color: #004b8e;
+  }
+  

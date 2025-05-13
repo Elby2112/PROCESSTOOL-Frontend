@@ -1,0 +1,142 @@
+/* TryFlowmax page */
+.try-flowmax-page {
+  font-family: 'Arial', sans-serif;
+  padding: 3rem 2rem;
+  background-color: #f8fbff;
+  text-align: center;
+}
+
+.try-flowmax-header h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: #002d72;
+  margin-bottom: 0.5rem;
+}
+
+.try-flowmax-header h2 {
+  font-size: 1.15rem;
+  color: #444;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+
+/* Trial cards container */
+.trial-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Trial card styling */
+.trial-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 340px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.trial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trial-card h3 {
+  font-size: 1.3rem;
+  color: #002d72;
+  margin-bottom: 1rem;
+}
+
+.trial-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Features list */
+.trial-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.trial-card li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.trial-card li::before {
+  content: "✔";
+  color: green;
+  font-weight: bold;
+}
+
+.trial-card li.unavailable::before {
+  content: "✖";
+  color: red;
+}
+
+/* Button */
+.trial-button {
+  display: inline-block;
+  padding: 0.65rem 1.2rem;
+  background-color: #002d72;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.trial-button:hover {
+  background-color: #0047bb;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.email-form input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.thank-you-message {
+  font-size: 0.95rem;
+  color: green;
+  margin-top: 1rem;
+}
+
+.full-trial-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.full-trial-form input,
+.full-trial-form textarea {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.full-trial-form textarea {
+  resize: vertical;
+}
+

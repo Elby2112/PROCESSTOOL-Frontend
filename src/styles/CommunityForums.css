@@ -1,0 +1,88 @@
+.forums-page {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+  }
+  
+  .forums-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .flowmax-logo {
+    height: 50px;
+  }
+  
+  .forums-title {
+    font-size: 2.5rem;
+    color: #0047bb;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .forums-search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+  }
+  
+  .forums-search {
+    padding: 10px 40px 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #0047bb;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .forums-search:focus {
+    border-color: #0085ff;
+    box-shadow: 0 0 10px rgba(0, 133, 255, 0.6);
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #0047bb;
+    cursor: pointer;
+  }
+  
+  .forums-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .forum-card {
+    background: #e6f0ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 71, 187, 0.1);
+  }
+  
+  .forum-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 71, 187, 0.15);
+  }
+  
+  .forum-card h2 {
+    font-size: 1.25rem;
+    color: #0047bb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .forum-card p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  

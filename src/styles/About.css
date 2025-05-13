@@ -1,0 +1,78 @@
+.about-section {
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    position: relative;
+    font-family: var(--font-body);
+    color: var(--color-white);
+  }
+  
+  .about-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for readability */
+    padding: 4rem 2rem;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-logo {
+    width: 200px;
+  }
+  
+  .about-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    color: var(--pt-color-1);
+  }
+  
+  .about-description {
+    font-size: var(--text-base);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .about-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 5px solid var(--pt-color-1);
+    backdrop-filter: blur(10px);
+    text-align: left;
+  }
+  
+  .about-card h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    color: var(--pt-color-1);
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-card p,
+  .about-card ul {
+    font-size: var(--text-base);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .about-card ul li {
+    margin-bottom: 0.5rem;
+  }
+  

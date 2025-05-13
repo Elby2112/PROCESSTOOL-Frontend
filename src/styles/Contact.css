@@ -1,0 +1,90 @@
+.contact-section {
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    position: relative;
+    font-family: var(--font-body);
+    color: var(--color-white);
+  }
+  
+  .contact-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for readability */
+    padding: 4rem 2rem;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-logo {
+    width: 100px;
+  }
+  
+  .contact-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    color: var(--pt-color-1);
+    margin: 0;
+  }
+  
+  .contact-subtitle {
+    font-size: var(--text-base);
+    margin-top: 0.5rem;
+    color: var(--color-white);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: var(--text-sm);
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--text-base);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--color-black);
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: 2px solid var(--pt-color-1);
+  }
+  
+  .submit-button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--pt-color-1);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--text-base);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: var(--pt-color-2);
+  }
+  

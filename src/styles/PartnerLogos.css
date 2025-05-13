@@ -1,0 +1,31 @@
+.partner-highlight-carousel {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.carousel-track-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.carousel-item-centered {
+  transition: transform 0.5s, filter 0.5s, opacity 0.5s;
+  opacity: 0.4;
+  filter: grayscale(100%);
+  transform: scale(0.9);
+}
+
+.carousel-item-centered img {
+  width: 100px;
+  height: auto;
+}
+
+.carousel-item-centered.active {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.2);
+}

@@ -1,0 +1,73 @@
+.services-section {
+  background-color: var(--color-grey-light);
+  padding: 80px 20px;
+  text-align: center;
+  font-family: var(--font-body);
+}
+
+.services-heading {
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--pt-color-2);
+  margin-bottom: 50px;
+  font-family: var(--font-heading);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-30px);
+  transition: transform 0.3s ease;
+}
+
+.services-heading:hover {
+  transform: translateY(0);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns only */
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+.icon-container {
+  flex-shrink: 0;
+  margin-top: 6px;
+  transition: color 0.3s ease;
+}
+
+.service-text h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  font-family: var(--font-heading);
+  color: var(--color-grey-dark);
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.service-text h3:hover {
+  color: var(--pt-color-3);
+}
+
+.service-text p {
+  font-size: var(--text-base);
+  color: var(--color-grey-dark);
+  line-height: 1.5;
+}
+
+.service-item:hover .icon-container {
+  color: var(--pt-color-3);
+}

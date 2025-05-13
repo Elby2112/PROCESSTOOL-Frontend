@@ -1,0 +1,38 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    /* ===== PROCESS TOOL COLORS ===== */
+    --pt-color-1: #acd20a;  /* Light green / top gradient */
+    --pt-color-2: #11ac40;  /* Deep green / bottom gradient */
+    --pt-color-3: #76c51d;  /* Accent or hover */
+    --pt-color-4: #45b92a;  /* Optional highlight */
+    --pt-color-5: #3d3c3e;  /* Logo text grey */
+  
+    /* ===== FLOWMAX COLORS ===== */
+    --fm-color-1: #2e87f9;  /* Spanish Sky Blue */
+    --fm-color-2: #3ea2e1;  /* Azure */
+    --fm-color-3: #1e99f4;  /* Dodger Blue */
+  
+    /* ===== NEUTRALS ===== */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey-light: #f4f4f4;
+    --color-grey-dark: #3e3e3e;
+  
+    /* ===== TYPOGRAPHY ===== */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  
+    /* Font Sizes */
+    --text-xs: 0.75rem;     /* 12px */
+    --text-sm: 0.875rem;    /* 14px */
+    --text-base: 1rem;      /* 16px */
+    --text-lg: 1.125rem;    /* 18px */
+    --text-xl: 1.25rem;     /* 20px */
+    --text-2xl: 1.5rem;     /* 24px */
+    --text-3xl: 1.875rem;   /* 30px */
+    --text-4xl: 2.25rem;    /* 36px */
+    --text-5xl: 3rem;       /* 48px */
+  }
+  
