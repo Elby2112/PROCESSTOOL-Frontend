@@ -26,6 +26,7 @@
   font-size: var(--text-lg);
   color: var(--color-grey-dark);
   margin-bottom: 2rem;
+  width: 700px;
 }
 
 .hero-fm__buttons {

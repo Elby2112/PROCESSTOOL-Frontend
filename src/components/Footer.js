@@ -3,6 +3,7 @@ import { FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import '../styles/Footer.css';
 import logo from '../assets/pt_logo1.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -38,9 +39,8 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><a href="/about">About</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/blogs">Blogs</a></li>
-            <li><a href="/videos">Videos</a></li>
+            <li><a href="/product">Products</a></li>
+            <li><a href="/tutorials">Videos</a></li>
           </ul>
         </motion.div>
 
@@ -52,8 +52,6 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <h4>Contact Us</h4>
-          <p>Algeria - DZ</p>
-          <p>Annaba City</p>
           <p>Tel: +213 (770) 072-662</p>
           <p>Email: support@processtool.net</p>
         </motion.div>

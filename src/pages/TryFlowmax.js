@@ -34,6 +34,7 @@ const TryFlowmax = () => {
     setFullFormSubmitted(true);
   };
 
+  //'https://processtool-backend.onrender.com/api/request-basic-trial',
   const handleBasicTrialRequest = (email) => {
     fetch('https://processtool-backend.onrender.com/api/request-basic-trial', {
       method: 'POST',
@@ -50,7 +51,7 @@ const TryFlowmax = () => {
       console.error('Error:', error); // Handle errors
     });
   };
-
+//'https://processtool-backend.onrender.com/api/request-full-trial'
   const handleFullTrialRequest = (companyName, userName, email) => {
     fetch('https://processtool-backend.onrender.com/api/request-full-trial', {
       method: 'POST',
@@ -93,7 +94,7 @@ const TryFlowmax = () => {
             <li>No sign-up</li>
             <li>Fast download</li>
             <li className="unavailable">Limited features</li>
-            <li className="unavailable">No firewater or scenario manager tools</li>
+            <li className="unavailable">Limited number of links</li>
           </ul>
           {!showEmailForm && !submitted && (
             <button className="trial-button" onClick={() => setShowEmailForm(true)}>
@@ -123,7 +124,7 @@ const TryFlowmax = () => {
 
         {/* Full Trial Card */}
         <div className="trial-card">
-          <h3 style={{ fontFamily: 'var(--font-heading)' }}>Request Full Trial – Full for 14 Days</h3>
+          <h3 style={{ fontFamily: 'var(--font-heading)' }}>Request Full Trial</h3>
           <p style={{ fontFamily: 'var(--font-body)' }}>
             Unlock all Flowmax features including pump sizing, transient analysis,
             water systems, and reporting tools. Great for technical evaluations or preparing real projects.
@@ -132,7 +133,6 @@ const TryFlowmax = () => {
             <li>Full functionality</li>
             <li>Firewater + Transient Analysis modules</li>
             <li>Scenario manager + full reporting</li>
-            <li>License key valid for 14 days</li>
             <li>Priority email support</li>
           </ul>
 

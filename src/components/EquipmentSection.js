@@ -5,7 +5,7 @@ import flowmaxLogo from '../assets/fm_logo1.png';
 // Custom icons
 import TankIcon from '../assets/Icons/tank.png';
 import PipeIcon from '../assets/Icons/pipe.png';
-import BlockedPipeIcon from '../assets/Icons/acumulator.png';
+import BlockedPipeIcon from '../assets/Icons/bar-chart.png';
 import PumpIcon from '../assets/Icons/pump.png';
 import ValveIcon from '../assets/Icons/valve.png';
 import HeatExchangerIcon from '../assets/Icons/heat-exchanger.png';
@@ -15,7 +15,7 @@ import PressureDropIcon from '../assets/Icons/pressure.png';
 const equipmentList = [
   { label: 'Tanks', icon: TankIcon },
   { label: 'Pipes & Fittings', icon: PipeIcon },
-  { label: 'Accumulators', icon: BlockedPipeIcon },
+  { label: 'Surge Control', icon: BlockedPipeIcon },
   { label: 'Pumps on Sizing and Rating Mode', icon: PumpIcon },
   { label: 'Control Valves on Sizing and Rating Mode', icon: ValveIcon },
   { label: 'Heat Exchangers', icon: HeatExchangerIcon },

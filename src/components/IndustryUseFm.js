@@ -33,7 +33,7 @@ const industryData = [
     image: petrochemicalImg,
   },
   {
-    title: 'LIQUEFIED NATURAL GAS (LNG)',
+    title: 'LNG',
     description: 'Design and optimize LNG storage, vaporization, and regasification systems in transport and terminal facilities.',
     image: lngImg,
   },
