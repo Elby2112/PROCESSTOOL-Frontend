@@ -34,7 +34,8 @@ const TryFlowmax = () => {
     setFullFormSubmitted(true);
   };
 
-  //'https://processtool-backend.onrender.com/api/request-basic-trial',
+  //'https://processtool-backend.onrender.com/api/request-basic-trial', 
+  // http://127.0.0.1:5000/api/request-basic-trial
   const handleBasicTrialRequest = (email) => {
     fetch('https://processtool-backend.onrender.com/api/request-basic-trial', {
       method: 'POST',
