@@ -37,7 +37,7 @@ const TryFlowmax = () => {
   //'https://processtool-backend.onrender.com/api/request-basic-trial', 
   // http://127.0.0.1:5000/api/request-basic-trial
   const handleBasicTrialRequest = (email) => {
-    fetch('http://127.0.0.1:5000/api/request-basic-trial', {
+    fetch('https://processtool-backend.onrender.com/api/request-basic-trial', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ const TryFlowmax = () => {
 //'https://processtool-backend.onrender.com/api/request-full-trial'
 //'http://127.0.0.1:5000/api/request-full-trial'
   const handleFullTrialRequest = (companyName, userName, email) => {
-    fetch('http://127.0.0.1:5000/api/request-full-trial', {
+    fetch('https://processtool-backend.onrender.com/api/request-full-trial', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
