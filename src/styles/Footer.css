@@ -1,8 +1,11 @@
+/* === FOOTER STYLES === */
+
 .footer {
   background-color: var(--color-grey-light);
   color: #333;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 
 .footer__content {
@@ -26,11 +29,14 @@
 .footer__logo {
   width: 150px;
   margin-bottom: 10px;
+  display: block;
 }
 
 .footer__tagline {
   font-size: 14px;
   margin-bottom: 15px;
+  line-height: 1.4;
+  color: #555;
 }
 
 .footer__socials a {
@@ -38,6 +44,11 @@
   font-size: 24px;
   color: #333;
   transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer__socials a:last-child {
+  margin-right: 0;
 }
 
 .footer__socials a:hover {
@@ -49,11 +60,15 @@
   font-size: 16px;
   margin-bottom: 10px;
   font-weight: bold;
+  color: var(--color-grey-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .footer__section ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer__section ul li {
@@ -63,7 +78,8 @@
 .footer__section ul li a {
   color: #333;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
 .footer__section ul li a:hover {
@@ -76,4 +92,6 @@
   padding-top: 15px;
   margin-top: 20px;
   font-size: 12px;
+  color: #777;
+  user-select: none;
 }

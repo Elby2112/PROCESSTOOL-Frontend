@@ -1,97 +1,112 @@
 /* Animation for the Subscribe Section */
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .subscribe-section {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: var(--pt-color-2); /* deep green background */
-    animation: fadeIn 1.2s ease-out; /* Fade-in animation */
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .subscribe-title {
-    font-family: var(--font-heading);
-    font-size: var(--text-3xl);
-    color: var(--color-white);
-    font-weight: 400;
-    margin-bottom: 10px;
-    animation: fadeIn 1.5s ease-out; /* Delay animation */
-  }
-  
-  .subscribe-subtitle {
-    font-family: var(--font-body);
-    font-size: var(--text-lg);
-    color: var(--color-white);
-    margin-bottom: 30px;
-    animation: fadeIn 1.7s ease-out; /* Delay animation */
-  }
-  
+}
+
+.subscribe-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--pt-color-2); /* deep green background */
+  animation: fadeIn 1.2s ease-out;
+}
+
+.subscribe-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  color: var(--color-white);
+  font-weight: 400;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.subscribe-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--color-white);
+  margin-bottom: 30px;
+  animation: fadeIn 1.7s ease-out;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 2s ease-out;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  color: var(--color-grey-dark);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  transition: all 0.3s ease;
+  transform: scale(0.95);
+  opacity: 0;
+  animation: fadeIn 1.8s ease-out forwards;
+}
+
+.subscribe-form input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border: 2px solid var(--pt-color-1);
+  box-shadow: 0px 0px 10px rgba(173, 210, 10, 0.2);
+}
+
+.subscribe-form button {
+  padding: 14px 30px;
+  background-color: var(--pt-color-1);
+  color: var(--color-white);
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+  opacity: 0;
+  animation: fadeIn 2.2s ease-out forwards;
+}
+
+.subscribe-form button:hover {
+  background-color: var(--pt-color-3);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-form button:active {
+  transform: translateY(0px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
   .subscribe-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    animation: fadeIn 2s ease-out; /* Delay animation */
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  .subscribe-form input {
-    flex: 1;
-    padding: 14px 18px;
-    border: 2px solid #ddd; /* Light grey border for input */
-    border-radius: 6px; /* Slightly rounded corners */
-    background-color: var(--color-white);
-    color: var(--color-grey-dark);
-    font-family: var(--font-body);
-    font-size: var(--text-base);
-    transition: all 0.3s ease;
-    transform: scale(0.95);
-    opacity: 0;
-    animation: fadeIn 1.8s ease-out forwards; /* Fade-in input field with scale */
-  }
-  
-  .subscribe-form input::placeholder {
-    color: rgba(0, 0, 0, 0.5); /* Lighter placeholder color */
-  }
-  
-  .subscribe-form input:focus {
-    outline: none;
-    border: 2px solid var(--pt-color-1); /* Light green border on focus */
-    box-shadow: 0px 0px 10px rgba(173, 210, 10, 0.2); /* green glow on focus */
-  }
-  
+
+  .subscribe-form input,
   .subscribe-form button {
-    padding: 14px 30px;
-    background-color: var(--pt-color-1); /* Light green background */
-    color: var(--color-white);
-    border: none;
-    border-radius: 6px; /* Slightly rounded corners */
-    font-family: var(--font-heading);
-    font-size: var(--text-base);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transform: scale(0.95);
-    opacity: 0;
-    animation: fadeIn 2.2s ease-out forwards; /* Fade-in button with scale */
+    width: 100%;
+    transform: scale(1); /* Reset scale on small screens */
+    opacity: 1; /* Show immediately for better UX */
+    animation: none;
   }
-  
-  .subscribe-form button:hover {
-    background-color: var(--pt-color-3); /* Darker green on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
-  }
-  
-  .subscribe-form button:active {
-    transform: translateY(0px); /* Button returns to original position */
-  }
-  
+}

@@ -30,14 +30,14 @@ const TryFlowmax = () => {
   const handleFullFormSubmit = (e) => {
     e.preventDefault();
     console.log('Full Trial Request:', fullFormData);
-    handleFullTrialRequest(fullFormData.company, fullFormData.name, fullFormData.email);  // Call the function for full trial
+    handleFullTrialRequest(fullFormData.company, fullFormData.name, fullFormData.email);  
     setFullFormSubmitted(true);
   };
 
   //'https://processtool-backend.onrender.com/api/request-basic-trial', 
   // http://127.0.0.1:5000/api/request-basic-trial
   const handleBasicTrialRequest = (email) => {
-    fetch('https://processtool-backend.onrender.com/api/request-basic-trial', {
+    fetch('http://127.0.0.1:5000/api/request-basic-trial', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -53,8 +53,9 @@ const TryFlowmax = () => {
     });
   };
 //'https://processtool-backend.onrender.com/api/request-full-trial'
+//'http://127.0.0.1:5000/api/request-full-trial'
   const handleFullTrialRequest = (companyName, userName, email) => {
-    fetch('https://processtool-backend.onrender.com/api/request-full-trial', {
+    fetch('http://127.0.0.1:5000/api/request-full-trial', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

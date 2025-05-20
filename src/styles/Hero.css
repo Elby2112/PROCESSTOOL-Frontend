@@ -1,3 +1,5 @@
+/* === HERO SECTION === */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -15,11 +17,12 @@
 .hero__overlay {
   position: absolute;
   top: 45%;
-  left: 25%; /* push to the right */
+  left: 25%; /* pushed slightly right for better composition */
   transform: translate(-40%, -50%);
   text-align: center;
   color: white;
   padding: 20px;
+  max-width: 600px;
 }
 
 .hero__title {
@@ -28,6 +31,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   color: var(--pt-color-5);
+  line-height: 1.1;
 }
 
 .hero__subtitle {
@@ -35,12 +39,14 @@
   font-size: 1.3rem;
   margin-bottom: 30px;
   color: var(--color-grey-dark);
+  line-height: 1.4;
 }
 
 .hero__buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .hero-btn {
@@ -53,7 +59,8 @@
   width: 190px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
 }
 
 .hero-btn--primary {
@@ -112,9 +119,18 @@
   cursor: pointer;
   padding: 0.3rem 0.6rem;
   border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
 }
 
-/*
+.hero__video-close:hover {
+  background-color: #eee;
+  transform: scale(1.1);
+}
+
+/* 
+Optional: Uncomment if you want the video content to have a responsive 16:9 aspect ratio
+
 .hero__video-content {
   position: relative;
   width: 90%;
@@ -130,4 +146,4 @@
   height: 100%;
   border: none;
 }
-  */
+*/

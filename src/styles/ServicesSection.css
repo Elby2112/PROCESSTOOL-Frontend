@@ -16,6 +16,7 @@
   margin-right: auto;
   transform: translateY(-30px);
   transition: transform 0.3s ease;
+  cursor: default; /* improves UX by showing no clickable pointer */
 }
 
 .services-heading:hover {
@@ -24,7 +25,7 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns only */
+  grid-template-columns: repeat(2, 1fr); /* two columns layout */
   gap: 40px;
   max-width: 1100px;
   margin: 0 auto;
@@ -37,6 +38,7 @@
   text-align: left;
   transform: scale(1);
   transition: transform 0.3s ease;
+  cursor: default;
 }
 
 .service-item:hover {
@@ -47,6 +49,12 @@
   flex-shrink: 0;
   margin-top: 6px;
   transition: color 0.3s ease;
+  font-size: 2rem; /* consider adding consistent icon size */
+  color: var(--pt-color-2); /* base icon color */
+}
+
+.service-item:hover .icon-container {
+  color: var(--pt-color-3);
 }
 
 .service-text h3 {
@@ -68,6 +76,10 @@
   line-height: 1.5;
 }
 
-.service-item:hover .icon-container {
-  color: var(--pt-color-3);
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* stack items on smaller screens */
+    gap: 30px;
+  }
 }
