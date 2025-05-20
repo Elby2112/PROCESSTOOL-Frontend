@@ -15,7 +15,6 @@ const HeroSectionFm = () => {
       >
         <h1>Hydraulic Design Software</h1>
         <p>
-          Streamline your hydraulic system analysis with powerful tools for pump sizing, and more.<br /> <br />
           Unified Hydraulic Simulation — Steady-State and Transient in One Tool.
         </p>
         <div className="hero-fm__buttons">
