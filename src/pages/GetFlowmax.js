@@ -65,7 +65,7 @@ const GetFlowmax = () => {
       setShowNotification(true);
       return;
     }
-    if (!formData.country.trim) {
+    if (!formData.country.trim()) {
       setMessage('❌ Please select your country.');
       setShowNotification(true);
       return;
